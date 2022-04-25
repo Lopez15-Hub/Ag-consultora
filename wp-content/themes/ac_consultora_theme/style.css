@@ -1,0 +1,259 @@
+/*
+    Theme Name: Ac Consultora Theme
+    URI: http://acconsultora.com.ar
+    Description: Ac Consultora Theme
+    Version: 1.0
+    Author: Ezequiel López
+    Author URI: https://ezequiel.lopez.com.ar
+*/
+
+/*FONTS IMPORTS*/
+@font-face {
+  font-family: "Gotham Rounded";
+  src: url("./fonts/GothamRounded-Bold.woff2") format("woff2"),
+    url("./fonts/GothamRounded-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham Rounded Book";
+  src: url("./fonts/GothamRounded-Book.woff2") format("woff2"),
+    url("./fonts/GothamRounded-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham Rounded";
+  src: url("./fonts/GothamRounded-Light.woff2") format("woff2"),
+    url("./fonts/GothamRounded-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham Rounded";
+  src: url("./fonts/GothamRounded-Medium.woff2") format("woff2"),
+    url("./fonts/GothamRounded-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*VARIBALES*/
+:root {
+  /*Colores: Gama de Azules*/
+  --darkblue: #032940 !important;
+  --mediumBlue: #0a6aa6 !important;
+  --lightBlue: #0cb1f2 !important;
+
+  /*Colores: Gama de grises*/
+  --mediumGray: #798187 !important;
+  --lightGray: #bcc4ce !important;
+  --white: #ffffff !important;
+
+  /*Fuentes*/
+  --default-font: "Gotham Rounded";
+  --font-book: "Gotham Rounded Book";
+}
+
+/* Logo */
+
+.logo {
+  width: 50px;
+  display: flex;
+  margin-top: 2%;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+}
+
+/* Default tags styles */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--darkblue);
+}
+
+h1 {
+  font-family: var(--default-font);
+  font-weight: bold;
+  color: var(--white);
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-family: var(--default-font);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--darkblue);
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-family: var(--font-book);
+  color: var(--white);
+}
+h3 {
+  font-family: var(--default-font);
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--darkblue);
+  text-align: start;
+}
+a {
+  text-decoration: none;
+  color: var(--darkblue);
+}
+/*Navbar Style*/
+.ag-navbar {
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: var(--white);
+}
+.ag-navbar .menu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+}
+.ag-navbar .menu li {
+  border-radius: 5%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  padding: 1.5%;
+  text-decoration: none;
+  list-style: none;
+  font-family: var(--default-font);
+  font-size: 1rem;
+  font-weight: bold;
+}
+.ag-navbar .menu li a:hover {
+  color: var(--mediumBlue) !important;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  text-decoration: underline;
+  list-style: none;
+  font-family: var(--default-font);
+  font-size: 1rem;
+  font-weight: bold;
+  transition: ease-in 0.3s;
+}
+.ag-title {
+  color: var(--darkblue);
+  font-weight: bold;
+  white-space: normal;
+  text-align: start;
+  display: flex;
+}
+.brand {
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  align-content: space-between !important;
+  align-self: flex-start !important;
+  display: flex !important;
+  height: 100%;
+}
+
+.menu-item a {
+  text-decoration: none !important;
+  color: var(--darkblue) !important;
+}
+.menu-item a:hover {
+  text-decoration: underline;
+}
+
+/*FOOTER Style*/
+.footer {
+  background-color: var(--mediumGray);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ag-socials {
+  border-top: solid 0.5px var(--lightGray);
+  background-color: var(--white);
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*HERO Style*/
+.hero {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 800px;
+  width: 100%;
+  opacity: 0.5;
+  background-image: url("./assets/background.png");
+}
+.filter {
+  background-color: rgb(0, 0, 0);
+}
+.ag-title-hero {
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 25%;
+  right: 25%;
+  z-index: 5;
+}
+/*
+CONTENT style
+*/
+
+.content {
+  width: 100%;
+  height: 600px;
+  background-color: var(--white);
+}
+.center {
+  text-align: center !important;
+  width: 100%;
+}
+
+/*
+Text classes
+*/
+.ag-color-primary {
+  color: var(--darkblue) !important;
+}
+.ag-color-secondary {
+  color: var(--mediumBlue) !important;
+}
+.ag-color-light {
+  color: var(--lightBlue) !important;
+}
+.ag-color-white {
+  color: var(--white) !important;
+}
+.ag-color-mediumgray {
+  color: var(--mediumGray) !important;
+}
+.ag-color-lightgray {
+  color: var(--lightGray) !important;
+}
